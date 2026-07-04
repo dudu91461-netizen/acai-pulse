@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Açaí Pulse</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header>
+  <h1>🍧 Açaí Pulse</h1>
+  <p>Todos os dias das 13h às 19h</p>
+
+  <div class="social">
+    <a href="https://instagram.com/acaiteria_pulse" target="_blank">Instagram</a>
+    <a href="https://wa.me/5547996932514" target="_blank">WhatsApp</a>
+  </div>
+</header>
+
+<section class="promo">
+  <h2>🔥 Promoção do dia</h2>
+  <p>2 Tradicionais (300ml) = Entrega grátis</p>
+</section>
+
+<section class="cardapio">
+
+  <div class="item">
+    <h3>🥣 Tradicional</h3>
+    <p>300ml de açaí</p>
+    <strong>R$ 15,00</strong>
+    <button onclick="add('Tradicional', 15)">Adicionar</button>
+  </div>
+
+  <div class="item">
+    <h3>🥛 Leite em Pó</h3>
+    <p>Açaí + leite condensado + leite em pó</p>
+    <strong>R$ 18,00</strong>
+    <button onclick="add('Leite em Pó', 18)">Adicionar</button>
+  </div>
+
+</section>
+
+<section class="carrinho">
+  <h2>🛒 Carrinho</h2>
+
+  <ul id="lista"></ul>
+
+  <p>Total: R$ <span id="total">0</span></p>
+
+  <select id="pagamento">
+    <option>PIX</option>
+    <option>Cartão</option>
+    <option>Dinheiro</option>
+  </select>
+
+  <button onclick="finalizar()">Finalizar Pedido</button>
+</section>
+
+<footer>
+  <p>© Açaí Pulse - Todos os direitos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+  </html>
