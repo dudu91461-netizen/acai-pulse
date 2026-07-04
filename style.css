@@ -92,3 +92,8 @@ footer{
   padding:15px;
   color:#888;
 }
+
+function copiarPix(){
+  navigator.clipboard.writeText("141.296.379-67");
+  alert("PIX copiado!");
+  }
